@@ -83,7 +83,6 @@ async function fetchWithLimits(url, opts = {}) {
   try {
     const response = await fetch(url, {
       method: 'GET',
-      redirect: 'follow',
       ...opts,
       signal: controller.signal
     });
